@@ -29,7 +29,6 @@ body {
 }
 
 img {
-    display: block;
-    margin: -200 auto;
-  }
-  
+  display: block;
+  margin: 0 auto;
+}
