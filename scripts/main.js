@@ -1,2 +1,15 @@
-const myHeading = document.querySelector("h1");
-myHeading.textContent = "Hello world!";
+const articles = [
+    {
+        title: "第一篇博客文章",
+        date: "2024-01-05",
+        preview: "这是我的第一篇博客文章。在这里，我将分享我的想法和经验...",
+        id: 1
+    },
+    {
+        title: "第二篇博客文章",
+        date: "2024-01-04",
+        preview: "今天我想分享一些有趣的想法...",
+        id: 2
+    }
+];
+
