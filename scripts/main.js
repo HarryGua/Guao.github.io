@@ -5,6 +5,7 @@ async function loadArticles() {
         const data = await response.json();
         
         const articlesContainer = document.getElementById('articles');
+        articlesContainer.innerHTML = ''; // 清空容器
         
         // 生成文章卡片HTML
         data.articles.forEach(article => {
