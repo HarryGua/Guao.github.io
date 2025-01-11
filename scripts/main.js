@@ -1,7 +1,7 @@
 // 加载文章列表
 async function loadArticles() {
     try {
-        const response = await fetch('/articles/index.json');
+        const response = await fetch('articles/index.json');
         const data = await response.json();
         
         const articlesContainer = document.getElementById('articles');
