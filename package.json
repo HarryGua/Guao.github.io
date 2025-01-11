@@ -3,5 +3,24 @@
         "watch": "node scripts/article-manager.js",
         "new-post": "node scripts/create-post.js",
         "build-index": "node scripts/article-manager.js build"
+    },
+    "name": "personal_web",
+    "version": "1.0.0",
+    "description": "It is a test of my personal web",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HarryGua/Guao.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/HarryGua/Guao.github.io/issues"
+    },
+    "homepage": "https://github.com/HarryGua/Guao.github.io#readme",
+    "dependencies": {
+        "chokidar": "^4.0.3",
+        "gray-matter": "^4.0.3"
     }
 }
