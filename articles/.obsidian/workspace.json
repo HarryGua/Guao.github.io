@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/YYYY-MM-DD-文章标题.md",
+                "file": "YYYY-MM-DD-test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "YYYY-MM-DD-文章标题"
+              "title": "YYYY-MM-DD-test"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "template/YYYY-MM-DD-文章标题.md",
+                "file": "YYYY-MM-DD-test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for YYYY-MM-DD-文章标题"
+              "title": "Backlinks for YYYY-MM-DD-test"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "template/YYYY-MM-DD-文章标题.md",
+                "file": "YYYY-MM-DD-test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from YYYY-MM-DD-文章标题"
+              "title": "Outgoing links from YYYY-MM-DD-test"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "template/YYYY-MM-DD-文章标题.md"
+                "file": "YYYY-MM-DD-test.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of YYYY-MM-DD-文章标题"
+              "title": "Outline of YYYY-MM-DD-test"
             }
           }
         ]
@@ -162,10 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "61b32a4b9d7b3b5d",
+  "active": "c82cb1e34380b893",
   "lastOpenFiles": [
-    "2024-01-11-blog-automation-guide.md",
     "template/YYYY-MM-DD-文章标题.md",
+    "YYYY-MM-DD-test.md",
+    "2024-01-11-blog-automation-guide.md",
     "template",
     "New folder"
   ]
