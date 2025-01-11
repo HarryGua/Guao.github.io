@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "watch": "node scripts/article-manager.js",
+        "new-post": "node scripts/create-post.js",
+        "build-index": "node scripts/article-manager.js build"
+    }
+}
