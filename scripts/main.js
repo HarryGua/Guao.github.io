@@ -15,6 +15,9 @@ async function loadArticles() {
             const articleCard = document.createElement('div');
             articleCard.className = 'article-card';
             
+            // 生成预览文本
+            const previewHtml = article.preview ? marked.parse(article.preview) : '';
+            
             articleCard.innerHTML = `
                 <h2 class="article-title">${article.title}</h2>
                 <div class="article-meta">
@@ -22,10 +25,21 @@ async function loadArticles() {
                     ${article.tags ? `| 标签: ${article.tags}` : ''}
                 </div>
                 <div class="article-preview">
-                    ${article.preview}
+                    ${previewHtml}
                 </div>
                 <a href="${BASE_PATH}/articles/${article.id}.html" class="read-more">阅读更多</a>
             `;
+            
+            // 处理预览区域的样式
+            const previewDiv = articleCard.querySelector('.article-preview');
+            // 移除预览中的大标题
+            const h1 = previewDiv.querySelector('h1');
+            if (h1) h1.remove();
+            
+            // 限制预览长度
+            if (previewDiv.textContent.length > 200) {
+                previewDiv.textContent = previewDiv.textContent.slice(0, 200) + '...';
+            }
             
             articlesContainer.appendChild(articleCard);
         });
