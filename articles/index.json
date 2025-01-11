@@ -1,15 +1,19 @@
 {
   "articles": [
     {
+      "id": "2025-01-11-test",
+      "title": "文章标题",
+      "date": "2024-01-12T00:00:00.000Z",
+      "preview": "\n# 文章标题\n\n这里写文章的开篇内容，这部分会显示在博客列表的预览中。开篇需要简洁有力，吸引读者继续阅读。\n\n## 第一个主标题\n\n这里详细展开你的第一个观点或主题。可以包含以下内容：\n\n- 具体的观点论述\n- 实际的操作步骤\n- 技术实现细节\n\n### 代码示例\n\n如果需要展示代码，可以这样写：\n\n```javascript\n// 你的代码示例\nconst example = {\n    name: \"示例代码\",\n    description: \"这里是代码说明\"\n};\n```\n\n## 第二个主标题\n\n继续展开你的第二个主题。记得可以：\n\n1. 使用序号列表\n2. 加入图片说明\n3. 插入代码片段\n\n## 总结\n\n在这里总结文章的主要内容，可以简要回顾关键点，也可以谈谈后续的展望。\n\n",
+      "tags": "标签1, 标签2, 标签3",
+      "fileName": "2025-01-11-test.md"
+    },
+    {
       "id": "2024-01-11-blog-automation-guide",
-      "title": "打造个人博客:自动化工具和扩展功能指南",
-      "date": "2024-01-11",
-      "preview": "",
-      "tags": [
-        "技术",
-        "教程",
-        "博客"
-      ],
+      "title": "打造个人博客: 自动化工具和扩展功能指南",
+      "date": "2024-01-11T00:00:00.000Z",
+      "preview": "\n# 打造个人博客: 自动化工具和扩展功能指南\n\n作为一名博主，我们希望把更多的精力放在内容创作上，而不是在技术细节上耗费太多时间。今天我想分享一些能让博客管理更轻松的自动化工具和扩展功能。\n\n## 文件监听：自动更新文章索引\n\n在写作过程中，我们经常需要不断预览和修改文章。通过添加文件监听功能，可以让系统自动检测文章的变化并更新索引，免去了手动运行脚本的麻烦。\n\n```javascript\nconst chokidar = require('chokidar');\n\n// 监听 articles 目录下的所有 .md 文件\nconst watcher = chokidar.watch('./articles/**/*.md', {\n    persistent: true,\n    ignoreInitial: false\n});\n\n// 文件变化时自动更新索引\nwatcher.on('add', generateArticlesIndex)\n       .on('change', generateArticlesIndex)\n       .on('unlink', generateArticlesIndex);\n```\n\n只需要安装 `chokidar` 包并运行这个脚本，它就会在后台持续监听文章的变化。\n\n## 文章模板生成器\n\n创建新文章时，我们常常需要填写一些基本信息。通过一个简单的命令行工具，我们可以快速生成文章模板：\n\n```javascript\n#!/usr/bin/env node\nconst fs = require('fs').promises;\nconst path = require('path');\nconst readline = require('readline');\n\nconst rl = readline.createInterface({\n    input: process.stdin,\n    output: process.stdout\n});\n\nasync function createArticle() {\n    const title = await question('文章标题: ');\n    const tags = await question('标签 (用逗号分隔): ');\n    \n    const date = new Date().toISOString().split('T')[0];\n    const fileName = `${date}-${title.toLowerCase().replace(/\\s+/g, '-')}.md`;\n    \n    const template = `",
+      "tags": "技术, 教程, 博客",
       "fileName": "2024-01-11-blog-automation-guide.md"
     }
   ]
