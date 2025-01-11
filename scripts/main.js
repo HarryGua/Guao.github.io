@@ -1,7 +1,10 @@
+// 基础路径配置
+const BASE_PATH = '/oreo_blog';
+
 // 加载文章列表
 async function loadArticles() {
     try {
-        const response = await fetch('./articles/index.json');
+        const response = await fetch(`${BASE_PATH}/articles/index.json`);
         const data = await response.json();
         
         const articlesContainer = document.getElementById('articles');
@@ -16,18 +19,19 @@ async function loadArticles() {
                 <h2 class="article-title">${article.title}</h2>
                 <div class="article-meta">
                     发布日期: ${formatDate(article.date)}
-                    ${article.tags.length ? `| 标签: ${article.tags.join(', ')}` : ''}
+                    ${article.tags ? `| 标签: ${article.tags}` : ''}
                 </div>
                 <div class="article-preview">
                     ${article.preview}
                 </div>
-                <a href="./articles/${article.id}.html" class="read-more">阅读更多</a>
+                <a href="${BASE_PATH}/articles/${article.id}.html" class="read-more">阅读更多</a>
             `;
             
             articlesContainer.appendChild(articleCard);
         });
     } catch (error) {
         console.error('加载文章失败:', error);
+        console.error(error);
         document.getElementById('articles').innerHTML = '<p>加载文章失败，请稍后重试。</p>';
     }
 }
