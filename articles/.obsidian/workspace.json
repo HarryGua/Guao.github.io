@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "YYYY-MM-DD-test.md",
+                "file": "2025-01-11-test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "YYYY-MM-DD-test"
+              "title": "2025-01-11-test"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "YYYY-MM-DD-test.md",
+                "file": "2025-01-11-test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for YYYY-MM-DD-test"
+              "title": "Backlinks for 2025-01-11-test"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "YYYY-MM-DD-test.md",
+                "file": "2025-01-11-test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from YYYY-MM-DD-test"
+              "title": "Outgoing links from 2025-01-11-test"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "YYYY-MM-DD-test.md"
+                "file": "2025-01-11-test.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of YYYY-MM-DD-test"
+              "title": "Outline of 2025-01-11-test"
             }
           }
         ]
@@ -162,10 +162,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c82cb1e34380b893",
+  "active": "61b32a4b9d7b3b5d",
   "lastOpenFiles": [
     "template/YYYY-MM-DD-文章标题.md",
-    "YYYY-MM-DD-test.md",
+    "2025-01-11-test.md",
     "2024-01-11-blog-automation-guide.md",
     "template",
     "New folder"
