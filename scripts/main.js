@@ -1,7 +1,7 @@
 // 加载文章列表
 async function loadArticles() {
     try {
-        const response = await fetch('articles/index.json');
+        const response = await fetch('./articles/index.json');
         const data = await response.json();
         
         const articlesContainer = document.getElementById('articles');
@@ -21,7 +21,7 @@ async function loadArticles() {
                 <div class="article-preview">
                     ${article.preview}
                 </div>
-                <a href="/articles/${article.fileName}" class="read-more">阅读更多</a>
+                <a href="./articles/${article.id}.html" class="read-more">阅读更多</a>
             `;
             
             articlesContainer.appendChild(articleCard);
