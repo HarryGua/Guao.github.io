@@ -1,0 +1,12 @@
+{
+  "editor:toggle-italics": [],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ]
+}
